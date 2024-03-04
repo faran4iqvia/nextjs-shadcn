@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <section className="">
       <p>Hii</p>
-      <div className='m-12'>
+      <div className="m-12">
         <ThemeToggle />
       </div>
       <Button>Hello</Button>
@@ -24,7 +24,17 @@ export default function Home() {
       <p className="font-semibold text-5xl">font-semibold</p>
       <p className="font-bold text-5xl">font-bold</p>
       <p className="font-extrabold text-5xl">font-extrabold</p>
-      <p className="text-5xl">font-</p>
+      <p className="text-5xl">font-normal</p>
+      <br />
+      <p className="text-5xl">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum perferendis deserunt at ut obcaecati itaque sint
+        dicta fuga perspiciatis culpa officia maxime reiciendis ipsum aut optio, autem illo labore? Maxime libero fugit
+        nobis culpa harum necessitatibus dolorem debitis expedita alias! at ut obcaecati itaque sint dicta fuga
+        perspiciatis culpa officia maxime reiciendis ipsum aut optio, autem illo labore? Maxime libero fugit nobis culpa
+        harum necessitatibus dolorem debitis expedita alias at ut obcaecati itaque sint dicta fuga perspiciatis culpa
+        officia maxime reiciendis ipsum aut optio, autem illo labore? Maxime libero fugit nobis culpa harum
+        necessitatibus dolorem debitis expedita alias
+      </p>
     </section>
   );
 }
