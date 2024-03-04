@@ -3,7 +3,7 @@ import ThemeToggle from '@/components/theme-toggle';
 
 export default function Home() {
   return (
-    <main className="">
+    <section className="">
       <p>Hii</p>
       <div className='m-12'>
         <ThemeToggle />
@@ -25,6 +25,6 @@ export default function Home() {
       <p className="font-bold text-5xl">font-bold</p>
       <p className="font-extrabold text-5xl">font-extrabold</p>
       <p className="text-5xl">font-</p>
-    </main>
+    </section>
   );
 }
