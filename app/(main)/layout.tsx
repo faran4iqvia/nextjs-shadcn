@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
-import NavSidebar from '@/components/navigation/nav-sidebar'
+import NavSidebar from '@/components/navigation/nav-sidebar';
+import TopHeader from '@/components/navigation/top-header';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const MainLayout = ({
   children,
@@ -8,11 +10,13 @@ const MainLayout = ({
 }>) => {
   return (
     <div className="h-full">
-      <div className="hidden md:flex h-full md:w-[200px] lg:w-[280px] z-30 flex-col fixed  inset-y-0">
-        <NavSidebar />
-      </div>
-      {/* adjusting padding pixels here */}
-      <main className="md:pl-[212px] lg:pl-[292px] h-full py-3 pr-3">{children}</main>
+      <NavSidebar />
+      <ScrollArea >
+
+      <TopHeader />
+      {/* adjusting padding pixels here based on top header and nav sidebar */}
+      <main className="md:pl-[292px] h-full py-3 pr-3">{children}</main>
+      </ScrollArea>
     </div>
   );
 };
