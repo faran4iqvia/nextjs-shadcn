@@ -29,11 +29,12 @@ export default function Home() {
       <p className="text-5xl">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum perferendis deserunt at ut obcaecati itaque sint
         dicta fuga perspiciatis culpa officia maxime reiciendis ipsum aut optio, autem illo labore? Maxime libero fugit
-        nobis culpa harum necessitatibus dolorem debitis expedita alias! at ut obcaecati itaque sint dicta fuga
+        nobis culpa harum 111 
+        222 necessitatibus dolorem debitis expedita alias! at ut obcaecati itaque sint dicta fuga
         perspiciatis culpa officia maxime reiciendis ipsum aut optio, autem illo labore? Maxime libero fugit nobis culpa
         harum necessitatibus dolorem debitis expedita alias at ut obcaecati itaque sint dicta fuga perspiciatis culpa
         officia maxime reiciendis ipsum aut optio, autem illo labore? Maxime libero fugit nobis culpa harum
-        necessitatibus dolorem debitis expedita alias
+        necessitatibus dolorem debitis end end end faran
       </p>
     </section>
   );

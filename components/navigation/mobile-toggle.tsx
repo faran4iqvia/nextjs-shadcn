@@ -2,7 +2,7 @@ import { Menu } from 'lucide-react';
 
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import NavSidebar from './nav-sidebar';
+import MobSidebar from './mob-sidebar';
 
 const MobileToggle = () => {
   return (
@@ -12,10 +12,9 @@ const MobileToggle = () => {
           <Menu />
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="p-0 !w-[280px]">
-        <p>asdas</p>
 
-        <NavSidebar />
+      <SheetContent side="left" className="p-0 w-[260px]">
+        <MobSidebar />
       </SheetContent>
     </Sheet>
   );
