@@ -1,12 +1,15 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, FC } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
 import { Button } from '@/components/ui/button';
 
-const ThemeToggle = () => {
+interface ThemeToggleProps {
+ showInfo?: boolean;
+}
+const ThemeToggle: FC<ThemeToggleProps> = ({ showInfo = false }) => {
  const { theme, setTheme } = useTheme();
 
  const [isClient, setIsClient] = useState(false);
@@ -17,7 +20,7 @@ const ThemeToggle = () => {
 
  return (
   <div
-   className='flex  w-full cursor-pointer items-center'
+   className='flex  cursor-pointer items-center'
    onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
   >
    {!isClient ? (
@@ -30,7 +33,9 @@ const ThemeToggle = () => {
 
       <span className='sr-only'>Toggle theme</span>
      </Button>
-     <span className='mx-4 font-bold capitalize'>Theme: {theme}</span>
+     {showInfo && (
+      <span className='mx-4 font-bold capitalize'>Theme: {theme}</span>
+     )}
     </>
    )}
   </div>

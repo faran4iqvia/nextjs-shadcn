@@ -62,7 +62,7 @@ const TestSidebarContent = () => {
    </ScrollArea>
 
    <div className='mt-auto flex w-full items-center gap-y-4 border-t-2 border-neutral-200 bg-gray-100 p-4 pb-2 dark:border-neutral-950 dark:bg-[#1e1f22]'>
-    <ThemeToggle />
+    <ThemeToggle showInfo />
    </div>
    <div className='bg-gray-100 p-4 pt-2 dark:bg-[#1e1f22]'>
     <Button size='full' variant='outline'>
