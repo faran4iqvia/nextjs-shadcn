@@ -4,6 +4,9 @@ import ThemeToggle from '@/components/theme-toggle';
 export default function Home() {
   return (
     <section className="">
+
+
+        
       <p>Hii</p>
       <div className="m-12">
         <ThemeToggle />
@@ -36,6 +39,7 @@ export default function Home() {
         officia maxime reiciendis ipsum aut optio, autem illo labore? Maxime libero fugit nobis culpa harum
         necessitatibus dolorem debitis end end end faran
       </p>
+
     </section>
   );
 }
