@@ -1,11 +1,7 @@
-import {ReactNode} from 'react'
+import { ReactNode } from 'react';
 
-const AuthLayout = ({children}: {children:ReactNode}) => {
-  return (
-    <section className='bg-red-300 h-full'>
-        {children}
-    </section>
-  )
-}
+const AuthLayout = ({ children }: { children: ReactNode }) => {
+ return <section className='h-full bg-red-300'>{children}</section>;
+};
 
-export default AuthLayout
+export default AuthLayout;

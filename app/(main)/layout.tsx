@@ -4,24 +4,22 @@ import TopHeader from '@/components/navigation/top-header';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 const MainLayout = ({
-  children,
+ children,
 }: Readonly<{
-  children: ReactNode;
+ children: ReactNode;
 }>) => {
-  return (
-    <div className="h-full overflow-hidden">
-      <NavSidebar />
+ return (
+  <div className='h-full overflow-hidden'>
+   <NavSidebar />
 
+   <TopHeader />
 
-        <TopHeader />
-
-
-      {/* adjusting padding pixels here based on top header and nav sidebar */}
-      <main className="pl-3 md:pl-[292px] h-full py-4 pr-3 pb-24 overflow-y-auto">
-        {children}
-      </main>
-    </div>
-  );
+   {/* adjusting padding pixels here based on top header and nav sidebar */}
+   <main className='h-full overflow-y-auto py-4 pb-24 pl-3 pr-3 md:pl-[292px]'>
+    {children}
+   </main>
+  </div>
+ );
 };
 
 export default MainLayout;
