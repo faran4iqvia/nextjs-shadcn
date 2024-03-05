@@ -15,8 +15,8 @@ const TestSidebarContent = () => {
         </button>
       </div>
 
-      <ScrollArea className="flex-1 w-full bg-gray-100 dark:bg-[#1e1f22]">
-        <div className="px-4 py-2">
+      <ScrollArea className="flex-1 w-full bg-gray-100 dark:bg-[#1e1f22] py-2">
+        <div className="p-4 py-2">
           <button className="group relative  flex items-center w-full gap-4">
             <div className="absolute -left-3 bg-primary rounded-r-full transition-all w-[6px]  h-full" />
             <div className="flex h-[48px] w-[48px] rounded-[24px] group-hover:rounded-[16px] transition-all overflow-hidden items-center justify-center bg-background dark:bg-neutral-700 group-hover:bg-primary">
@@ -26,11 +26,11 @@ const TestSidebarContent = () => {
           </button>
         </div>
 
-        {Array(3)
+        {Array(10)
           .fill('-')
           .map((_, i) => (
-            <div key={i} className="px-4 py-2">
-              <button className="group flex items-center w-full gap-4 mb-4">
+            <div key={i} className="p-4 py-2">
+              <button className="group flex items-center w-full gap-4">
                 <div className="flex h-[48px] w-[48px] rounded-[24px] group-hover:rounded-[16px] transition-all overflow-hidden items-center justify-center bg-background dark:bg-neutral-700 group-hover:bg-primary">
                   <Plus className="group-hover:text-white transition" size={25} />
                 </div>
