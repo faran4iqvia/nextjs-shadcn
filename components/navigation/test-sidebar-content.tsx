@@ -8,6 +8,7 @@ import ThemeToggle from '@/components/theme-toggle';
 import Icon from '@/components/Icon';
 import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 
 const TestSidebarContent = () => {
   const pathname = usePathname();
@@ -58,8 +59,14 @@ const TestSidebarContent = () => {
         ))}
       </ScrollArea>
 
-      <div className="p-4 mt-auto flex items-center gap-y-4 w-full bg-gray-100 dark:bg-[#1e1f22] border-neutral-200 dark:border-neutral-950 border-t-2">
+      <div className="p-4 pb-2 mt-auto flex items-center gap-y-4 w-full bg-gray-100 dark:bg-[#1e1f22] border-neutral-200 dark:border-neutral-950 border-t-2">
         <ThemeToggle />
+      </div>
+      <div className="p-4 pt-2 bg-gray-100 dark:bg-[#1e1f22]">
+
+      <Button size='full' variant="outline">
+        Logout
+      </Button>
       </div>
     </>
   );
